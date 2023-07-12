@@ -134,7 +134,7 @@ header{
     }
 }
 /* medium device */
-@media screen and (min-width:576) and (max-width:768px) {
+@media screen and (min-width:576) and (max-width:992px) {
     .banner{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -154,5 +154,4 @@ header{
         height: 500px;
         
     }
-    
 }
