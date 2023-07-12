@@ -40,9 +40,8 @@ header{
     height: 100vh;
 }
 .banner{
-    display: flex;
-    align-items: center;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     position: relative;
     padding: 30px;
     bottom: 20px;
@@ -88,14 +87,16 @@ header{
 
 .what-box{
     box-shadow: -4px 0px 0px rgb(7, 223, 151) ;
+    display: flex;
+    flex-wrap: wrap;
 }
 .what-title{
     margin-left: 20px;
 }
 /* skills*/
 .skills{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap:20px;
 }
 .skill{
@@ -108,4 +109,50 @@ header{
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
+}
+/* responsive */
+/* small device */
+@media screen and (max-width:576px) {
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px;
+        padding: 0px;
+    }
+    section{
+        margin:100px auto;
+        padding: 0px;
+    }
+    
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skill{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+/* medium device */
+@media screen and (min-width:576) and (max-width:768px) {
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px;
+        padding: 0px;
+    }
+    section{
+        margin: 0px;
+        padding: 0px;
+    }
+    .skill-section{
+        margin-top: 100px;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 500px;
+        
+    }
+    
 }
