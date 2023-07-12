@@ -26,6 +26,10 @@ hr{
     color: white;
     background-color: #333;
 }
+section{
+    margin-left: 120px;
+    padding: 40px;
+}
 /* banner */
 header{
     position: relative;
@@ -74,10 +78,7 @@ header{
     bottom: 10px;
 }
 /* what*/
-section{
-    margin-left: 100px;
-    padding: 40px;
-}
+
 .what-box{
     box-shadow: -4px 0px 0px rgb(7, 223, 151) ;
 }
