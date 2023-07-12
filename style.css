@@ -20,6 +20,10 @@ body{
     color:white;
     cursor: pointer;
 }
+.btn:hover{
+    background-color:cornflowerblue;
+    color: #333;
+}
 hr{
     height: 0.1px;
     border: none;
@@ -66,16 +70,19 @@ header{
     background-color: rgb(7, 223, 151);
 }
 .btn-2{
-    background-color: rgb(33, 33, 131);
+    background-color: cadetblue;
 }
 .banner-photo{
+    
     margin: 20px;
     padding: 30px;
 }
 .banner-img{
-    width: 320px;
+    width: 350px;
     position: relative;
     bottom: 10px;
+    border: 0px;
+    border-radius: 50%;
 }
 /* what*/
 
